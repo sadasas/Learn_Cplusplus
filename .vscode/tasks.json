@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "g++ build project",
+			"command": "C:/msys64/mingw64/bin/g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${workspaceFolder}/src/Main.cpp",
+				"${workspaceFolder}/src/Math.cpp",
+				"-o",
+				"${workspaceFolder}/bin/output/Main.exe"
+			],
+			"options": {
+				"cwd": "C:/msys64/mingw64/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:/msys64/mingw64/bin/g++.exe"
+		}
+	]
+}
