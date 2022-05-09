@@ -1,10 +1,28 @@
 #include "..\hfile\Log.h"
 using namespace std;
 
+
 int Substract(int a, int b);
+void Increment(int& c)
+{
+	c++;
+}
+
+class Player
+{
+   private:
+   int a,b;
+   public:
+   int c,d;
+
+   void Move(int aa, int bb)  
+   {
+      a+= aa;
+      b+= bb;
+   } 
+};
 int main()
 {
-   int a =2;
-   int* ptr = &a;
-   cout << Substract(2,1) << endl; 
+   Player pp;
+   pp.Move(1,2);
 }
