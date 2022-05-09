@@ -1,9 +1,16 @@
 #include "..\hfile\Log.h"
 using namespace std;
 
-int Data = 4;
+struct Data
+{
+   static int count;
+};
+int Data::count;
 int main()
 {
-   
+   Data data1;
+   data1.count = 2;
+
+   Data data2;
   
 }
