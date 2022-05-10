@@ -1,16 +1,18 @@
 #include "..\hfile\Log.h"
 using namespace std;
 
-struct Data
-{
-   static int count;
+class Employe
+{ public:
+   enum Job
+   {  
+      Admin=10, Manager, Staff
+   };
+  Job job = Admin; 
 };
-int Data::count;
 int main()
 {
-   Data data1;
-   data1.count = 2;
-
-   Data data2;
+   Employe Wahyu;
+   Wahyu.job = Employe::Manager;
+   int ptr = Wahyu.job;
   
 }
