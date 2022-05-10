@@ -5,14 +5,38 @@ class Employe
 { public:
    enum Job
    {  
-      Admin=10, Manager, Staff
+      Admin, Manager, Staff
    };
-  Job job = Admin; 
+  Job job ; 
+
+  ~Employe()
+      {
+      cout << "Destroyed" << endl;
+      }
+  
+};
+
+class Person :Employe
+{
+public:
+    string Name;
+
+    Person()
+    {
+        Name = "Unidentified";
+        job = Staff;
+    }
+
+    void Print()
+    {
+        cout << Name << job << endl;
+    }
+
 };
 int main()
 {
-   Employe Wahyu;
-   Wahyu.job = Employe::Manager;
-   int ptr = Wahyu.job;
+   Person Wahyu;
+   Wahyu.Print();
+   
   
 }
