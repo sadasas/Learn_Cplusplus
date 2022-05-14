@@ -1,65 +1,47 @@
 #include "..\hfile\Log.h"
+#include <string>
 using namespace std;
 
-class Gender
+
+
+class Person
 {
-public:
-    virtual string GetGender() = 0;
+public :
+    int a, b;
+
+    //the method cannot change a variable member
+    //return value cannot be change by a content or address.
+   const int* const  GetVar () const
+    {
+        a = 2;
+        return &a;
+    }
+
 };
 
-
-class Employe: public Gender
-{ public:
-   enum Job
-   {  
-      Admin, Manager, Staff
-   };
-  Job m_job ; 
-
-  virtual void PrintJob()
-  {
-      cout <<  Admin << endl;
-  }
-
-  string GetGender() override
-  {
-      return "MALE";
-  };
-  ~Employe()
-      {
-      cout << "Destroyed" << endl;
-      }
-  
-};
-
-class Person :public Employe
+void PrintPerson( Person& a)
 {
-public:
-    string m_name;
-
-    Person(std::string name = "unidentified", Employe::Job job = Employe::Staff): m_name(name)
-    {
-        m_job = job;
-    }
-
-    void PrintJob () override
-    {
-        cout << m_job << endl;
-    }
-    void PrintName()
-    {
-        cout << m_name << m_job << endl;
-    }
-
+   // reference to return value.
+   // not allowed because return value is a const
+   // but the init entity not const 
+   int* ss = a.GetVar();
+   ss = new int;
+   *ss = 4;
 };
+
 int main()
 {
-    Person Wahyu;
-    Wahyu.PrintJob();
+    const int MAX_AGE = 31;
 
-   Employe& User = Wahyu;
-   User.PrintJob();
+    // declare const before name variable 
+     int* const a = new int;
+
+    //dereference
+    *a = 3;
+
+    //reassign actual pointer
+    a =(int*) MAX_AGE;
+    
   
-   cout << "ssss";
+   cout << "end";
 
-}
