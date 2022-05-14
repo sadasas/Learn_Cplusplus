@@ -7,25 +7,30 @@ using namespace std;
 class Person
 {
 public :
-    int a, b;
-    Person() :a(11) {};
-    Person(int n): a(n){}
+    int m_age;
+    const string m_name;
+     Person(int age) :m_age(age),m_name("anonim") {};
+    explicit Person(const string& name): m_age(-1),m_name(name){}
    
 };
 
+void CheckPerson(const Person& person )
+{
 
+}
 
 int main()
 {
-    //heap
-    Person* wahyu = new Person(4);
-    delete wahyu;
+    
+   //Implicit conversion
+    Person wahyu = 10;
+    //Explicit conversion
+    Person wahyu("wahyu");
 
-    //stack
-    Person p;
-
-    Person c(4);
-        
+    //Implicit conversion in argument
+    CheckPerson(10);
+    //Explicit conversion in argument
+    CheckPerson(Person("wahyu"));
     cout << "end";
 
 }
