@@ -8,40 +8,24 @@ class Person
 {
 public :
     int a, b;
-
-    //the method cannot change a variable member
-    //return value cannot be change by a content or address.
-   const int* const  GetVar () const
-    {
-        a = 2;
-        return &a;
-    }
-
+    Person() :a(11) {};
+    Person(int n): a(n){}
+   
 };
 
-void PrintPerson( Person& a)
-{
-   // reference to return value.
-   // not allowed because return value is a const
-   // but the init entity not const 
-   int* ss = a.GetVar();
-   ss = new int;
-   *ss = 4;
-};
+
 
 int main()
 {
-    const int MAX_AGE = 31;
+    //heap
+    Person* wahyu = new Person(4);
+    delete wahyu;
 
-    // declare const before name variable 
-     int* const a = new int;
+    //stack
+    Person p;
 
-    //dereference
-    *a = 3;
+    Person c(4);
+        
+    cout << "end";
 
-    //reassign actual pointer
-    a =(int*) MAX_AGE;
-    
-  
-   cout << "end";
-
+}
