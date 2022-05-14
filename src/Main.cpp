@@ -4,33 +4,33 @@ using namespace std;
 
 
 
-class Person
+class Vector2
 {
-public :
-    int m_age;
-    const string m_name;
-     Person(int age) :m_age(age),m_name("anonim") {};
-    explicit Person(const string& name): m_age(-1),m_name(name){}
    
+public:
+    int _a, _b;
+    Vector2(int a, int b) : _a(a), _b(b) {};
+
+    //overloading + operator
+    Vector2 operator +(const Vector2 other) const
+    {
+        return Vector2(_a + other._a, _b + other._b);
+    }
+
 };
 
-void CheckPerson(const Person& person )
+//overloading << operator
+ ostream& operator<< (ostream& stream, const Vector2 point)
 {
-
+     stream << point._a << "," << point._b;
 }
-
 int main()
 {
     
-   //Implicit conversion
-    Person wahyu = 10;
-    //Explicit conversion
-    Person wahyu("wahyu");
+    Vector2 pointA(2, 1);
+    Vector2 pointB(3, 1);
 
-    //Implicit conversion in argument
-    CheckPerson(10);
-    //Explicit conversion in argument
-    CheckPerson(Person("wahyu"));
+    cout << pointA + pointB;
     cout << "end";
 
 }
