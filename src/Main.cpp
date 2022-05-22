@@ -5,46 +5,33 @@
 #include <vector>
 using namespace std;
 
-class Vector2
+//template in class
+template<typename T, int A>
+class Person
 {
-     
+    T availableSlot[A];
 public:
-    int _a, _b;
 
-    Vector2(int a, int b) : _a(a), _b(b) {};
-
-    int Subtraction()
+    T GetSlot() const
     {
-        return _a + _b;
+        return availableSlot;
     }
-
-    Vector2(const Vector2& other)
-    {
-        cout << "Copied" << endl;
-    }
-
 };
+
+//template in function
+template<typename type>
+void Print(type value)
+{
+    cout << value << endl;
+}
+
 int main()
 {
-    {
-        vector<Vector2> points;
-        //instance in main function and copied to actual data alocation of points
-        points.push_back({ 1,2 });
-        points.push_back({ 2,2 });
+    Print(5);
+    Print("sadsa");
 
-        //instance in actual data allocation of points
-        points.emplace_back(Vector2(1, 2));
-        points.emplace_back(Vector2(2, 2));
-
-
-        for (int i = 0; i < points.size(); i++)
-        {
-            cout << points[i].Subtraction() << endl;
-        }
-
-    }
- 
-    
+    Person<int,4> wahyu;
+    wahyu.GetSlot();
     cout << "end";
 
 }
