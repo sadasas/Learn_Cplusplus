@@ -18,12 +18,12 @@
     <ClCompile Include="src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Math.cpp">
+    <ClCompile Include="VirtualDestructor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="hfile\Log.h">
+    <ClInclude Include="TheChernoCplusplusTutorial.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

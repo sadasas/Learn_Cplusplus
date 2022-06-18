@@ -9,7 +9,7 @@
 				"-fdiagnostics-color=always",
 				"-g",
 				"${workspaceFolder}/src/Main.cpp",
-				"${workspaceFolder}/src/Math.cpp",
+				//"${workspaceFolder}/src/Math.cpp",
 				"-o",
 				"${workspaceFolder}/bin/output/Main.exe"
 			],
