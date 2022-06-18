@@ -66,6 +66,7 @@ using namespace  std;
         //same thing when declare derived object but not polimorphim
         Derived* derived = new Derived();
         delete derived;
+
         cout << "-----------------------------" << endl;
         //in case polimorphim the base class not now if derived class have destructor because not inheritance from base(virtual)
         Base* polimorph = new Derived();

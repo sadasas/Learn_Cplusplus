@@ -5,7 +5,8 @@ using namespace std;
 
 int main()
 {
-    ExampleVirtualDestructor();
+    StaticCasting();
+     ConstCasting();
     cin.get();
-
-}
+    
+}     
