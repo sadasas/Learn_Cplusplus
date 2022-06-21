@@ -101,6 +101,7 @@
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\VirtualDestructor.cpp" />
     <ClCompile Include="src\Casting.cpp" />
+    <ClCompile Include="src\Benchmark.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TheChernoCplusplusTutorial.h" />

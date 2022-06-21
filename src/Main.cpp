@@ -5,8 +5,7 @@ using namespace std;
 
 int main()
 {
-    StaticCasting();
-     ConstCasting();
+    SmartPointerBenchmark();
     cin.get();
     
 }     
