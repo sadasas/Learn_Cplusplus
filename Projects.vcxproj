@@ -97,11 +97,17 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\VirtualDestructor.cpp" />
     <ClCompile Include="src\Casting.cpp" />
     <ClCompile Include="src\Benchmark.cpp" />
+    <ClCompile Include="src\Tuple.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TheChernoCplusplusTutorial.h" />
