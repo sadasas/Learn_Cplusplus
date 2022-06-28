@@ -2,6 +2,11 @@
 #include <chrono>
 #include <array>
 #include <memory>
+
+
+/// <summary>
+/// simple benchmark using timer
+/// </summary>
 class  Timer
 {
 public:

@@ -5,7 +5,11 @@
 
 
 
-
+/// <summary>
+/// return optional value 
+/// </summary>
+/// <param name="pathFile"></param>
+/// <returns></returns>
 std::optional <std::string> ReadDataAsString(const std::string& pathFile)
 {
 

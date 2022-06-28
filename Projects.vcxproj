@@ -108,7 +108,7 @@
     <ClCompile Include="src\Casting.cpp" />
     <ClCompile Include="src\Benchmark.cpp" />
     <ClCompile Include="src\Tuple.cpp" />
-    <ClCompile Include="src\Optional.cpp" />
+    <ClCompile Include="src\Variant.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TheChernoCplusplusTutorial.h" />

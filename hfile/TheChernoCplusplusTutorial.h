@@ -9,4 +9,5 @@ void DinamicCasting();
 void IterationEx();
 void SmartPointerBenchmark();
 void OptionalExample();
+void VariantExample();
 std::tuple<std::string, int> TupleExample();
