@@ -104,11 +104,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="src\VirtualDestructor.cpp" />
-    <ClCompile Include="src\Casting.cpp" />
-    <ClCompile Include="src\Benchmark.cpp" />
-    <ClCompile Include="src\Tuple.cpp" />
-    <ClCompile Include="src\Variant.cpp" />
+    <ClCompile Include="Asynchronously.cpp" />
+   
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TheChernoCplusplusTutorial.h" />
