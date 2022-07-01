@@ -13,4 +13,5 @@ void VariantExample();
 void NotUseAsyncExample();
 void UseAsyncExample();
 void ArrayOptExample();
+void SingletonExample();
 std::tuple<std::string, int> TupleExample();

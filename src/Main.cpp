@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-     ArrayOptExample();
+    SingletonExample();
       cin.get();
     
 }                

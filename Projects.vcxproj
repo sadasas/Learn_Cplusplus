@@ -104,7 +104,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="StringOptimization.cpp" />
+    <ClCompile Include="Singleton.cpp" />
    
   </ItemGroup>
   <ItemGroup>
