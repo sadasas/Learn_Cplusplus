@@ -28,7 +28,6 @@ std::string FetchDataFromFile(std::string receivedData)
 
 void NotUseAsyncExample()
 {
-
 	std::chrono::system_clock::time_point start = std::chrono::system_clock::now();
 	std::string data = FetchDataFromDB("data");
 	std::string data2 = FetchDataFromFile("data");

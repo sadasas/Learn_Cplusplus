@@ -12,4 +12,5 @@ void OptionalExample();
 void VariantExample();
 void NotUseAsyncExample();
 void UseAsyncExample();
+void ArrayOptExample();
 std::tuple<std::string, int> TupleExample();
