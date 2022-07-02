@@ -1,6 +1,10 @@
 name: "File existence check"
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - juli2022
+    
 
 jobs:
   Build:
