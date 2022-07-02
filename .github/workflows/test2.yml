@@ -3,9 +3,17 @@ name: "File existence check"
 on: [push, pull_request]
 
 jobs:
-  DIR:
-    runs-on: windows-latest
+  Build:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Checkout code
-        run: dir
+      - name: Instal Compiler
+        run: sudo apt install g++
+      - name: Check Version Compiler
+        run: g++ --version
+      - name: Check directory
+        run: ls
+      - name: Compile cpp file
+        run: g++ -o Main.exe src/Main.cpp Singleton.cpp
+      - name: run Executable
+        run: ./Main.exe
