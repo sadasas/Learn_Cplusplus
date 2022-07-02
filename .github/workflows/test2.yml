@@ -1,0 +1,14 @@
+
+on:
+  label: 
+    types:
+      - created
+  push:
+    branches:
+      - Juli2022
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      run: echo "hello"
+
