@@ -12,3 +12,11 @@ jobs:
     - name: Check Version Compiler
       run:
         g++ --version
+    - name: Build CPP File
+      run:
+        g++ -o main.exe src/Main.cpp Singleton.cpp
+    
+    - name: Run Executable
+      run:
+        ./main.exe
+    
