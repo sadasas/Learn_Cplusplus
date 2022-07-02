@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: 
-        sudo apt install g++
-        g++ --version
+          sudo apt install g++
+          g++ --version
      
 
