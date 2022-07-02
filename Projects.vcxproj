@@ -103,6 +103,7 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="RValuesLValues.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="TrackMemoryAllocation.cpp" />
   </ItemGroup>

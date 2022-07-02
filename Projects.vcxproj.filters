@@ -18,10 +18,10 @@
     <ClCompile Include="src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Singleton.cpp">
+    <ClCompile Include="TrackMemoryAllocation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TrackMemoryAllocation.cpp">
+    <ClCompile Include="RValuesLValues.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
