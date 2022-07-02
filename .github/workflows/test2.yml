@@ -18,4 +18,4 @@ jobs:
       - name: Check directory
         run: ls
       - name: run Executable
-        run: ./Main.exe
+        run: Main.exe
