@@ -8,9 +8,11 @@ on:
       - Juli2022
 jobs:
   job1:
-    name: tes
+    name: Install Compiler
     runs-on: ubuntu-latest
     steps:
-      - run: echo "hello"
+      - run: 
+        sudo apt install g++
+        g++ --version
      
 
