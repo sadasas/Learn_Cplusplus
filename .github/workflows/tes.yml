@@ -1,12 +1,8 @@
-name: C/C++ CI
-
-on: workflow_dispatch
-
+name: hello-world
+on: push
 jobs:
-  build:
+  my-job:
     runs-on: ubuntu-latest
-
     steps:
-     - uses: actions/checkout@v3
-     - name: configure
-     
+      - name: my-step
+        run: echo "Hello World!"
