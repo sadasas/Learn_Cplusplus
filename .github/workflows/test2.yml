@@ -1,19 +1,16 @@
+name: C/C++ CI
 
-on:
-  label: 
-    types:
-      - created
-  push:
-    branches:
-      - Juli2022
+on: [push]
+
 jobs:
-  job1:
-    name: Install Compiler
+  ubuntu-build:
     runs-on: ubuntu-latest
     steps:
-      - run: 
-          sudo apt install g++
-          g++ --version
-          g++ sada
-     
-
+    - name: Checkout
+      uses: actions/checkout@v2.0.0
+    - name: Build project
+      uses: nicledomaS/cmake_build_action@v1.4
+      with:
+        submodule_update: ON
+        run_tests: ON
+        unit_test_build: -Dtest=ON
