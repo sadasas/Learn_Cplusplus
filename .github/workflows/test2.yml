@@ -14,7 +14,7 @@ jobs:
         g++ --version
     - name: Build CPP File
       run:
-       g++ -o ${GITHUB_WORKSPACE}/main.exe ${GITHUB_WORKSPACE}/src/Main.cpp ${GITHUB_WORKSPACE}/Singleton.cpp
+       g++ -o /home/runner/work/Learn_Cplusplus/main.exe /home/runner/work/Learn_Cplusplus/src/Main.cpp /home/runner/work/Learn_Cplusplus/Singleton.cpp
     
     - name: Run Executable
       run:
