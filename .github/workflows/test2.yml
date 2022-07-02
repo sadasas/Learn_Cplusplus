@@ -14,7 +14,7 @@ jobs:
         g++ --version
     - name: Build CPP File
       run:
-        echo ${env:PATH}
+       echo " $GITHUB_WORKSPACE"
     
     - name: Run Executable
       run:
