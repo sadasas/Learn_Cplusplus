@@ -14,7 +14,7 @@ jobs:
         g++ --version
     - name: Build CPP File
       run:
-        g++ -o main.exe ../src/Main.cpp ../Singleton.cpp
+        echo ${env:PATH}
     
     - name: Run Executable
       run:
