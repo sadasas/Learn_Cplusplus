@@ -1,18 +1,25 @@
+name: "File existence check"
 
 on:
-  label: 
-    types:
-      - created
   push:
     branches:
-      - Juli2022
+      - juli2022
+    
+
 jobs:
-  job1:
-    name: Install Compiler
+  Build:
     runs-on: ubuntu-latest
     steps:
-      - run: 
-        sudo apt install g++
-        g++ --version
-     
-
+      - uses: actions/checkout@v3
+      - name: Instal Compiler
+        run: sudo apt install g++
+      - name: Check Version Compiler
+        run: g++ --version
+      - name: Check directory
+        run: ls
+      - name: Compile cpp file
+        run: g++ -o Main.exe Singleton.cpp src/Main.cpp 
+      - name: Check directory
+        run: ls
+      - name: run Executable
+        run: ./Main.exe
