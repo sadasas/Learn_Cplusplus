@@ -8,5 +8,5 @@ int main()
 {
         SingletonExample();
       cin.get();
-    adadsds
+    
 }                
