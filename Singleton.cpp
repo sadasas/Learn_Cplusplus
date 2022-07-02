@@ -2,6 +2,8 @@
 
 
 #include <iostream>
+#include <fstream>
+#include <string>
 #include "hfile/TheChernoCplusplusTutorial.h"
 class Singleton
 {
@@ -29,15 +31,50 @@ private:
 
 
 
+class FileStream
+{
+public:
+	static FileStream& Get()
+	{
+		static FileStream s_Instance;
+		return s_Instance;
+	}
+	static void Save() { return Get().SaveFile(); }
+	static std::string Load() { return Get().LoadFile(); }
+
+private:
+	FileStream(){}
+	FileStream(const FileStream&);
+	static	FileStream s_Instance;
+	void SaveFile()
+	{
+		std::ofstream myFile;
+		myFile.open("example.txt");
+		myFile << "TES";
+		myFile.close();
+	}
+
+	std::string LoadFile()
+	{
+		std::string line;
+		std::ifstream myFile("Example.txt");
+		if (myFile.is_open())
+		{
+			std::getline(myFile, line);
+		}
+
+		return line;
+
+	}
+
+};
+
 
 
 void SingletonExample()
 {
 
+ std::cout <<FileStream::Load();
+
 	
-
-	float c = Singleton::Float();
-
-	std::cout << c << std::endl;
-
 }
