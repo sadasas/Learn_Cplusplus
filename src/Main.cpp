@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    TrackMemoryExample();
+        SingletonExample();
       cin.get();
     
 }                
