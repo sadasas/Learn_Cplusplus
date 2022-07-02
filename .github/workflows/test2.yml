@@ -14,9 +14,9 @@ jobs:
         g++ --version
     - name: Build CPP File
       run:
-        g++ -o main.exe src/Main.cpp Singleton.cpp
+        g++ -o main.exe ../src/Main.cpp ../Singleton.cpp
     
     - name: Run Executable
       run:
-        ./main.exe
+        ../main.exe
     
