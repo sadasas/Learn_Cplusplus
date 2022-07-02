@@ -3,7 +3,7 @@ name: "File existence check"
 on:
   push:
     branches:
-      - juli2022
+      - Juli2022
     
 
 jobs:
