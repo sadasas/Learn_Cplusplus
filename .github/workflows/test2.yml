@@ -14,6 +14,8 @@ jobs:
       - name: Check directory
         run: ls
       - name: Compile cpp file
-        run: g++ -o Main.exe src/Main.cpp Singleton.cpp
+        run: g++ -o Main.exe Singleton.cpp src/Main.cpp 
+      - name: Check directory
+        run: ls
       - name: run Executable
         run: ./Main.exe
