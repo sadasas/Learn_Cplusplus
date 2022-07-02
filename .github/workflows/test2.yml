@@ -14,7 +14,7 @@ jobs:
         g++ --version
     - name: Build CPP File
       run:
-        g++ -o ${GITHUB_WORKSPACE}main.exe ${GITHUB_WORKSPACE}src/Main.cpp ${GITHUB_WORKSPACE}Singleton.cpp
+        ls
     
     - name: Run Executable
       run:
