@@ -104,8 +104,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="Singleton.cpp" />
-   
+    <ClCompile Include="TrackMemoryAllocation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TheChernoCplusplusTutorial.h" />

@@ -14,4 +14,5 @@ void NotUseAsyncExample();
 void UseAsyncExample();
 void ArrayOptExample();
 void SingletonExample();
+void  TrackMemoryExample();
 std::tuple<std::string, int> TupleExample();
