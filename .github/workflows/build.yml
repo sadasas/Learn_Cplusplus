@@ -30,7 +30,7 @@ jobs:
       - name: Check Version Compiler
         run: g++ --version
       - name: Compile cpp file
-        run: g++ -o MoveSemantic.exe src/Main.cpp src/MoveSemantic.cpp
+        run: g++ -o MoveSemantic.exe src/MoveSemantic.cpp src/Main.cpp
       - name: Run Executable
         run: ./MoveSemantic.exe
 
