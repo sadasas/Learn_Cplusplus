@@ -20,6 +20,8 @@ jobs:
         run: g++ --version
       - name: Make Bin Folder 
         run: mkdir bin
+      - name: check dir
+        run: ls
       - name: Make Object File
         run: g++ -c bin/MoveSemantic.o bin/Main.o  src/MoveSemantic.cpp src/Main.cpp
       - name: Compile cpp file
