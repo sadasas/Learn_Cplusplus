@@ -18,15 +18,12 @@
     <ClCompile Include="src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TrackMemoryAllocation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RValuesLValues.cpp">
+    <ClCompile Include="src\MoveSemantic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TheChernoCplusplusTutorial.h">
+    <ClInclude Include="hfile\TheChernoCplusplusTutorial.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

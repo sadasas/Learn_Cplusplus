@@ -15,4 +15,5 @@ void UseAsyncExample();
 void ArrayOptExample();
 void SingletonExample();
 void  TrackMemoryExample();
+void   MoveSemanticExample();
 std::tuple<std::string, int> TupleExample();

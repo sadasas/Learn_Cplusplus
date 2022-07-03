@@ -7,7 +7,7 @@ on:
     
 
 jobs:
-  Build:
+  Singleton:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,8 +18,24 @@ jobs:
       - name: Check directory
         run: ls
       - name: Compile cpp file
-        run: g++ -o Main.exe Singleton.cpp src/Main.cpp 
+        run: g++ -o Main.exe src/Singleton.cpp src/Main.cpp 
       - name: Check directory
         run: ls
       - name: run Executable
         run: ./Main.exe
+
+  Move Semantic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal Compiler
+      - run: sudo apt install g++
+      - name: Check Version Compiler
+      - run: g++ --version
+      - name: Compile cpp file
+      - run: g++ -o MoveSemantic.exe src/Main.cpp src/Singleton.cpp
+      - name: Run Executable
+      - run: ./MoveSemantic.exe
+
+
+

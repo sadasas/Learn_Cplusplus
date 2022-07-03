@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-        SingletonExample();
+      MoveSemanticExample();
       cin.get();
     
 }                
