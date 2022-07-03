@@ -24,7 +24,7 @@ jobs:
       - name: run Executable
         run: ./Main.exe
 
-  Move Semantic:
+  MoveSemantic:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
