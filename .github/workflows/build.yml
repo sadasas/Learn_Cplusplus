@@ -18,11 +18,8 @@ jobs:
       - name: Check directory
         run: ls
       - name: Compile cpp file
-        run: g++ -o Main.exe src/Singleton.cpp src/Main.cpp 
-      - name: Check directory
-        run: ls
-      - name: run Executable
-        run: ./Main.exe
+        run: g++ src/Singleton.cpp
+      
 
   MoveSemantic:
     runs-on: ubuntu-latest
@@ -33,7 +30,7 @@ jobs:
       - name: Check Version Compiler
         run: g++ --version
       - name: Compile cpp file
-        run: g++ -o MoveSemantic.exe src/Main.cpp src/Singleton.cpp
+        run: g++ -o MoveSemantic.exe src/Main.cpp src/MoveSemantic.cpp
       - name: Run Executable
         run: ./MoveSemantic.exe
 
