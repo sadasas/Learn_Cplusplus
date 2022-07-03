@@ -29,13 +29,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Instal Compiler
-      - run: sudo apt install g++
+        run: sudo apt install g++
       - name: Check Version Compiler
-      - run: g++ --version
+        run: g++ --version
       - name: Compile cpp file
-      - run: g++ -o MoveSemantic.exe src/Main.cpp src/Singleton.cpp
+        run: g++ -o MoveSemantic.exe src/Main.cpp src/Singleton.cpp
       - name: Run Executable
-      - run: ./MoveSemantic.exe
+        run: ./MoveSemantic.exe
 
 
 
