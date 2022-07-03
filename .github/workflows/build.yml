@@ -18,8 +18,12 @@ jobs:
         run: ls
       - name: Check Version Compiler
         run: g++ --version
+      - name: Make Bin Folder 
+        run: mkdir bin
+      - name: Make Object File
+        run: g++ -c bin/MoveSemantic.o bin/Main.o  src/MoveSemantic.cpp src/Main.cpp
       - name: Compile cpp file
-        run: g++ -o MoveSemantic.exe src/MoveSemantic.cpp src/Main.cpp
+        run: g++ -o bin/MoveSemantic.exe bin/MoveSemantic.o bin/Main.o
       
 
 
