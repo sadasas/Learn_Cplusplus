@@ -23,9 +23,9 @@ jobs:
       - name: check dir
         run: ls
       - name: Make Object File
-        run: g++ -c bin/MoveSemantic.o bin/Main.o  src/MoveSemantic.cpp src/Main.cpp
+        run: g++ -c src/MoveSemantic.cpp src/Main.cpp
       - name: Compile cpp file
-        run: g++ -o bin/MoveSemantic.exe bin/MoveSemantic.o bin/Main.o
+        run: g++ -o bin/MoveSemantic.exe MoveSemantic.o Main.o
       
 
 
