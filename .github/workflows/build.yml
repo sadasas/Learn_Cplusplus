@@ -1,7 +1,8 @@
+name: "Build"
 on: 
   push:
     branches:
-      -Juli2022
+      - Juli2022
 jobs:
   Build Current Project:
     runs-on: ubuntu-latest
