@@ -23,10 +23,26 @@ jobs:
       - name: check dir
         run: ls
       - name: Make Object File
-        run: g++ -c src/MoveSemantic.cpp src/Main.cpp
+        run: g++ -c src/MoveSemantic.cpp src/Main.cpp       
+      - name: Check Object File
+        run: MoveSemantic.o
       - name: Compile cpp file
         run: g++ -o bin/MoveSemantic.exe MoveSemantic.o Main.o
       
-
+  Singleton:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal Compiler
+        run: sudo apt install g++
+      - name: Check Directory
+        run: ls
+      - name: Check Version Compiler
+        run: g++ --version
+      - name: Make Preprocces File
+        run: g++ -E src/Singleton.cpp 
+      - name: Make Object File
+        run: g++ -c src/Singleton.cpp       
+     
 
 
