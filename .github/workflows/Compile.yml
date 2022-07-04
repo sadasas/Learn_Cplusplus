@@ -1,0 +1,162 @@
+name: "Build"
+
+on:
+  push:
+    branches:
+      - Juli2022
+    
+
+jobs:
+  StringOptimization:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal Compiler
+        run: sudo apt install g++
+      - name: Check Directory
+        run: ls
+      - name: Check Version Compiler
+        run: g++ --version
+      - name: Make Preprocces File
+        run: g++ -E src/StringOptimization.cpp 
+      - name: Make Object File
+        run: g++ -c src/StringOptimization.cpp
+
+  TrackMemoryAllocation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal Compiler
+        run: sudo apt install g++
+      - name: Check Directory
+        run: ls
+      - name: Check Version Compiler
+        run: g++ --version
+      - name: Make Preprocces File
+        run: g++ -E src/TrackMemoryAllocation.cpp 
+      - name: Make Object File
+        run: g++ -c src/TrackMemoryAllocation.cpp
+  
+  Asynchronously:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal Compiler
+        run: sudo apt install g++
+      - name: Check Directory
+        run: ls
+      - name: Check Version Compiler
+        run: g++ --version
+      - name: Make Preprocces File
+        run: g++ -E src/Asynchronously.cpp 
+      - name: Make Object File
+        run: g++ -c src/Asynchronously.cpp       
+  
+  Variant:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal Compiler
+        run: sudo apt install g++
+      - name: Check Directory
+        run: ls
+      - name: Check Version Compiler
+        run: g++ --version
+      - name: Make Preprocces File
+        run: g++ -E src/Variant.cpp 
+      - name: Make Object File
+        run: g++ -c src/Variant.cpp       
+  
+  VirtualDestructor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal Compiler
+        run: sudo apt install g++
+      - name: Check Directory
+        run: ls
+      - name: Check Version Compiler
+        run: g++ --version
+      - name: Make Preprocces File
+        run: g++ -E src/VirtualDestructor.cpp 
+      - name: Make Object File
+        run: g++ -c src/VirtualDestructor.cpp
+
+  Tuple:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal Compiler
+        run: sudo apt install g++
+      - name: Check Directory
+        run: ls
+      - name: Check Version Compiler
+        run: g++ --version
+      - name: Make Preprocces File
+        run: g++ -E src/Tuple.cpp 
+      - name: Make Object File
+        run: g++ -c src/Tuple.cpp       
+  
+  Casting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal Compiler
+        run: sudo apt install g++
+      - name: Check Directory
+        run: ls
+      - name: Check Version Compiler
+        run: g++ --version
+      - name: Make Preprocces File
+        run: g++ -E src/Casting.cpp 
+      - name: Make Object File
+        run: g++ -c src/Casting.cpp
+
+
+  Benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal Compiler
+        run: sudo apt install g++
+      - name: Check Directory
+        run: ls
+      - name: Check Version Compiler
+        run: g++ --version
+      - name: Make Preprocces File
+        run: g++ -E src/Benchmark.cpp 
+      - name: Make Object File
+        run: g++ -c src/Benchmark.cpp       
+  
+  MoveSemantic:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal Compiler
+        run: sudo apt install g++
+      - name: Check Directory
+        run: ls
+      - name: Check Version Compiler
+        run: g++ --version
+      - name: Make Preprocces File
+        run: g++ -E src/MoveSemantic.cpp 
+      - name: Make Object File
+        run: g++ -c src/MoveSemantic.cpp       
+      
+  Singleton:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal Compiler
+        run: sudo apt install g++
+      - name: Check Directory
+        run: ls
+      - name: Check Version Compiler
+        run: g++ --version
+      - name: Make Preprocces File
+        run: g++ -E src/Singleton.cpp 
+      - name: Make Object File
+        run: g++ -c src/Singleton.cpp       
+     
+
+
