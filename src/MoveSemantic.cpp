@@ -27,11 +27,39 @@ public:
 	String( String&& other) noexcept
 	{
 		printf("Moved\n");
+
+
+		
 		m_Size = other.m_Size;
+		
 		m_Data = other.m_Data;
+
+		
+		other.m_Size = 0;
+		other.m_Data = nullptr;
+	}
+
+	String& operator = (String&& other)
+	{
+		if(this!= &other)
+		{
+			m_Size = other.m_Size;
+
+			m_Data = other.m_Data;
+
+
+			other.m_Size = 0;
+			other.m_Data = nullptr;
+		}
+		delete[] m_Data;
+		m_Size = other.m_Size;
+
+		m_Data = other.m_Data;
+
 
 		other.m_Size = 0;
 		other.m_Data = nullptr;
+		return *this;
 	}
 
 	~String()
@@ -67,7 +95,11 @@ private:
 
 void MoveSemanticExample()
 {
-	Entity a("wahyu");
-	Entity v("wahyu");
+	String a = "wahyu";
+	String b;
+	
+	b = std::move(a);
+	
+
 	
 }

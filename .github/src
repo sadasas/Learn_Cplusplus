@@ -1,0 +1,28 @@
+name: "Build"
+on: 
+  push:
+    branches:
+      - Juli2022
+jobs:
+  Build Current Project:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Instal Compiler
+        run: sudo apt install g++
+      - name: Check Directory
+        run: ls
+      - name: Check Version Compiler
+        run: g++ --version
+      - name: Make Preprocces File
+        run: g++ -E src/MoveSemantic.cpp src/Main.cpp 
+      - name: Make Object File
+        run: g++ -c src/MoveSemantic.cpp src/Main.cpp
+      - name: Build 
+        run: g++ -o Main.exe MoveSemantic.o Main.o
+      - name: Upload Executable
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: Main.exe
+          retention-days: 5 
