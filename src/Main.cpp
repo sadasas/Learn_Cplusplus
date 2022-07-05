@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    MoveSemanticExample();
+    StackDataStructureExample();
       cin.get();
     
 }                
