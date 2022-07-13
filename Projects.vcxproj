@@ -108,8 +108,8 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\HeapDataStructureExample.cpp" />
     <ClCompile Include="src\Main.cpp" />
-    <ClCompile Include="src\StackDataStructure.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="hfile\TheChernoCplusplusTutorial.h" />

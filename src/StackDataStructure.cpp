@@ -1,6 +1,8 @@
 #include <iostream>
 #include "../hfile/TheChernoCplusplusTutorial.h"
 
+
+
 template<typename T, size_t S>
 class Array
 {
@@ -11,6 +13,7 @@ public:
 	{
 			return m_Data[index]; 
 	}
+	//if variable const
 	const T& operator [](size_t index) const
 	{
 		return m_Data[index];

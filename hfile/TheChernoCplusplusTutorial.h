@@ -17,4 +17,6 @@ void SingletonExample();
 void TrackMemoryExample();
 void MoveSemanticExample();
 void StackDataStructureExample();
+void HeapDataStructureExample();
+void IteratorExample();
 std::tuple<std::string, int> TupleExample();
